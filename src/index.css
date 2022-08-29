@@ -35,9 +35,9 @@ code {
   
   position: fixed;
   margin-top: 5px;
-  display: flex;
+ 
   justify-content: space-around;
-  align-items: center;
+  
   width: calc(var(--widthVar)*1px);
   color: white;
 }

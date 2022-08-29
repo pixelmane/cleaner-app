@@ -26,18 +26,12 @@ function App() {
   return (
     
     <div className="App">
-      <header id='navBar'>
-        <NavLink style={({isActive}) => 
-                isActive ? activeStyle : inactiveStyle}  to='/'><div id='homeLink'>Home</div></NavLink>
-        <NavLink style={({isActive}) => 
-                isActive ? activeStyle : inactiveStyle} to='/menu'><div id='menuLink'>Menu</div></NavLink>
-        <NavLink style={({isActive}) => 
-                isActive ? activeStyle : inactiveStyle} to='/contact' ><div id='contactLink'>Contact</div></NavLink>
-        <a href='https://www.order.store/store/addellas-on-oak/_deV1dJoTAqA3HbtZiG_Dg' target='_blank' rel='noreferrer'><div id='delivery'>Delivery</div></a>
-      </header>
-      <div id='banner'><div id='phoneCont'><a href='tel:614-928-3032'><h2 id="phone">ph:614-928-3032</h2></a></div><a href='https://www.facebook.com/addellasonoak/' target='_blank' rel='noreferrer'><div id='social1'></div></a><a href='https://www.instagram.com/addellas614/' target='_blank' rel='noreferrer'><div id='social2'></div></a></div>
+      <header id='navBar'><h1>Columbus Carpet Cleaners</h1>
+      <h4>Home of the 49.99 per room special!</h4>
+        </header>
+      <div id='banner'><div id='phoneCont'><a href='tel:440-539-9505'><h2 id="phone">ph:440-539-9505</h2></a></div></div>
       <Routes>
-        <Route path='/' element={<Home />} /> 
+        <Route path='/' element={<Contact />} /> 
         <Route path='/menu/*' element ={<Menu />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
@@ -50,7 +44,7 @@ function Contact() {
   return (
     <div>
     <div id='contactCont'>
-      <h1 className='hours'>contact</h1>
+      <h1 className='hours'>Call or Contact us below:</h1>
       <form id='theForm' name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
           <p>
@@ -60,7 +54,7 @@ function Contact() {
             <input placeholder='email' type="email" name="email"/>
           </p>
           <p>
-            <textarea placeholder='question' name="message"></textarea>
+            <textarea placeholder='Please include rooms, approximate square footage, date needed, address, phone' name="message"></textarea>
           </p>
           <p>
             <button type="submit">Send</button>

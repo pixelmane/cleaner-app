@@ -1,6 +1,6 @@
 
 import './App.css';
-import { NavLink, Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 var root = document.querySelector(':root');
 function updateSize () {
   let sizing = window.innerWidth;
@@ -17,12 +17,7 @@ window.addEventListener('resize', function resize() {
 })
 function App() {
   
-  let activeStyle = {
-    color: 'white', backgroundColor: 'rgb(246, 137, 137)', borderRadius: '10px', padding: '5px 10px', paddingLeft: '10px', paddingRight: '10px'
-  }
-  let inactiveStyle = {
-    color: 'white', borderRadius: '10px', padding: '5px 10px', backgroundColor: 'rgba(0,0,0,.3)', paddingLeft: '10px', paddingRight: '10px'
-  }
+  
   return (
     
     <div className="App">
@@ -171,57 +166,5 @@ function PlantBased() {
     
   )
 }
-function Home() {
-  return (
-    <div id='homeCont'>
-      <div className='hoursCont'>
-      <h1 className='hours'>hours</h1>
-      <div id='schedule'>
-        <div id='daysCont'>
-          <h2 className='days'>Monday</h2><h2 className='times'>4pm - 12am</h2><h2>*HH: 4pm-7pm</h2>
-          <h2 className='days'>Tuesday</h2><h2 className='times'>12pm - 12am</h2><h2>*HH: 4pm-7pm</h2>
-          <h2 className='days'>Wednesday</h2><h2 className='times'>12pm - 12am</h2><h2>*HH: 4pm-7pm</h2>
-          <h2 className='days'>Thursday</h2><h2 className='times'>12pm - 12am</h2><h2>*HH: 4pm-7pm</h2>
-          <h2 className='days'>Friday</h2><h2 className='times'>12pm - 1am</h2><h2>*HH: 4pm-7pm</h2>
-          <h2 className='days'>Saturday</h2><h2 className='times'>12pm - 1am</h2><h2>--</h2>
-          <h2 className='days'>Sunday</h2><h2 className='times'>12pm - 10pm</h2><h2>--</h2>
-        </div>
-        <div id='happyHour'>
-          *Happy Hour:  $4 drafts, 5$ apps, 5$ wine, 3$ bottles/cans/well drinks
-        </div>
-        {/*<div id='timesCont'>
-        <h2 className='times'>4pm - 12am</h2>
-          <h2 className='times'>12pm - 12am</h2>
-          <h2 className='times'>12pm - 12am</h2>
-          <h2 className='times'>12pm - 12am</h2>
-          <h2 className='times'>12pm - 1am</h2>
-          <h2 className='times'>12pm - 1am</h2>
-          <h2 className='times'>12pm - 10pm</h2>
-        </div>
-  */}
-      </div>
-      </div>
-      <div id='addressCont'>
-      <h1 className='hours'>address</h1>
-      
-        {/*<div id='timesCont'>
-        <h2 className='times'>4pm - 12am</h2>
-          <h2 className='times'>12pm - 12am</h2>
-          <h2 className='times'>12pm - 12am</h2>
-          <h2 className='times'>12pm - 12am</h2>
-          <h2 className='times'>12pm - 1am</h2>
-          <h2 className='times'>12pm - 1am</h2>
-          <h2 className='times'>12pm - 10pm</h2>
-        </div>
-  */}
-      </div>
-      <div id='addressBlock'>
-      <h2>ADDELLA'S ON OAK</h2>
-      <h2>1485 Oak St.</h2>
-      <h2>Columbus, OH 43205</h2>
-      </div>
-      </div>
-      
-  )
-}
+ 
 export default App;
